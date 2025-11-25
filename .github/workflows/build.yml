@@ -1,0 +1,41 @@
+name: Build CVs
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repository
+      uses: actions/checkout@v4
+
+    - name: Install LaTeX
+      run: |
+        sudo apt-get update
+        sudo apt-get install -y texlive-full latexmk
+
+    # --- Build Developer CV ---
+    - name: Build Developer CV
+      working-directory: ./CV_Developer
+      run: |
+        latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
+
+    # --- Build Researcher CV ---
+    - name: Build Researcher CV
+      working-directory: ./CV_RESEARCHER
+      run: |
+        latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
+
+    # --- Upload PDFs ---
+    - name: Upload PDFs
+      uses: actions/upload-artifact@v4
+      with:
+        name: CV-PDFs
+        path: |
+          CV_Developer/main.pdf
+          CV_RESEARCHER/main.pdf
