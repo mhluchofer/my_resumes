@@ -1,0 +1,287 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Developer CV
+% LaTeX Class
+% Version 2.0 (12/10/23)
+%
+% This class originates from:
+% http://www.LaTeXTemplates.com
+%
+% Authors:
+% Omar Roldan
+% Based on a template by  Jan Vorisek (jan@vorisek.me)
+% Based on a template by Jan Küster (info@jankuester.com)
+% Modified for LaTeX Templates by Vel (vel@LaTeXTemplates.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[9pt]{developercv} % Default font size, values from 8-12pt are recommended
+\usepackage{multicol}
+\setlength{\columnsep}{0mm}
+%----------------------------------------------------------------------------------------
+\usepackage{lipsum}  
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND CONTACT INFORMATION
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.5\textwidth} 
+	\vspace{-\baselineskip}
+	
+	{ \fontsize{16}{20} \textcolor{black}{\textbf{\MakeUppercase{Luis Nagua Cuenca}}}} 
+	
+	\vspace{6pt}
+	
+	{\Large Robotics Developer $\sim$ Postdoctoral Researcher}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.2\textwidth}
+	\vspace{-\baselineskip}
+	
+	\icon{Globe}{11}{\href{https://linktr.ee/mhlucho}{linktr.ee/mhlucho}}\\ 
+    \icon{MapMarker}{11}{Madrid, Spain}\\
+    \icon{MobilePhone}{11}{\href{tel:+34674859239}{+34674859239}}\\
+\end{minipage}
+\begin{minipage}[t]{0.27\textwidth}
+	\vspace{-\baselineskip}
+	
+	\icon{Envelope}{11}{\href{mailto:lnagua@arquimea.com}{mhlucho@gmail.com}}\\	
+    \icon{LinkedinSquare}{11}{\href{https://linkedin.com/in/mhluchofer}{linkedin.com/in/mhluchofer}}\\    
+    \icon{Github}{11}{\href{https://github.com/mhluchofer}{github.com/mhluchofer}}\\ % Si tienes GitHub, pon aquí tu usuario real
+\end{minipage}
+
+%----------------------------------------------------------------------------------------
+%	INTRODUCTION, SKILLS AND TECHNOLOGIES
+%----------------------------------------------------------------------------------------
+
+\begin{minipage}[t]{0.46\textwidth}
+\cvsect{Summary}
+\vspace{-6pt}
+
+A professional Mechatronics Engineer with over eight years' experience in developing robotic systems, integrating artificial intelligence, analysing biomechanics and controlling actuators.
+
+I hold specialised doctoral training in soft robotics, ROS2, Python, MATLAB and advanced sensor analysis.
+
+I have contributed to national and international projects, leading the design, simulation and implementation of robotic platforms with a focus on automation, kinematic analysis and sensor integration.
+
+I am an expert in the experimental validation of robotic systems using simulators such as Gazebo and MuJoCo, and the development of control algorithms and machine learning architectures to enhance robotic performance and human–robot interaction.
+
+\end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.465\textwidth}
+    \cvsect{Skills}
+    \vspace{-6pt}
+    
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Languages:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      Python, C++, MATLAB, LaTeX,
+    \end{minipage}
+    \vspace{4mm}
+    
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Frameworks /Libraries:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      ROS2, TensorFlow, Keras, Scikit-learn, OpenCV, Arduino, Tkinter
+    \end{minipage}
+    \vspace{4mm}
+    
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Simulation / Tools:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      Gazebo, MuJoCo, RViz, RobotStudio, SolidWorks
+    \end{minipage}
+    \vspace{4mm}
+    
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Technologies:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      Soft Robotics, CanOpen, Serial Communication, I2C, SPI, Biomechanical Sensors (IMU, Encoders)
+    \end{minipage}
+    \vspace{4mm}
+
+    \begin{minipage}[t]{0.2\textwidth}
+        \textbf{Soft Skills:}
+    \end{minipage}
+    \hfill
+    \begin{minipage}[t]{0.73\textwidth}
+      Leadership, Research Documentation, Project Management, Collaboration, Public Speaking
+    \end{minipage}
+\end{minipage}
+
+
+%----------------------------------------------------------------------------------------
+%	Projects
+%----------------------------------------------------------------------------------------
+\cvsect{Projects}
+\begin{entrylist}
+    \entry
+		{ROS2, Python, ML}
+		{SOFIA (PID2020-113194GB-I00) - Public National Project, Spain}
+		{}
+		{Design of intelligent soft robotic joints with reconfiguration and modularity capabilities, integrating artificial intelligence techniques for enhanced actuator performance and sensorimotor functionalities (Sept 2021 – Aug 2024).}
+		
+    \entry
+		{ROS2, Python, Machine Learning}
+		{HumaSoft - National Research Project, Spain}
+		{}
+		{Development, simulation, and experimental validation of a soft robotic neck prototype aimed at human-robot interaction, featuring advanced kinematic models and control strategies.}
+		
+    \entry
+		{ROS2, ML, Biomechanics}
+		{Exoskeleton Controller Development}
+		{}
+		{Implementation of ML-driven algorithms for human gait analysis, phase detection, and sensor integration (IMUs) into exoskeleton control systems using ROS2.}
+
+	\entry
+		{Tkinter, ROS2, Python}
+		{Robotic Control GUI}
+		{}
+		{Creation of graphical interfaces to monitor and control robotic systems, integrating real-time sensor data visualization and user interaction.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Education}
+\begin{entrylist}
+    \entry
+		{2018 -- 2023}
+		{Ph.D. in Robotics}
+		{Universidad Carlos III de Madrid, Spain}
+		{Research on soft robotics, biomechanical analysis, robotic control systems, and integration of machine learning techniques.}
+    \entry
+		{2016 -- 2018}
+		{Master in Robotics and Automation}
+		{Universidad Carlos III de Madrid, Spain}
+		{Advanced industrial robotics, automation technologies, control engineering, and programming of robotic systems.}
+	\entry
+		{2007 -- 2013}
+		{Mechatronics Engineering}
+		{Universidad de las Fuerzas Armadas - ESPE, Ecuador}
+		{Multidisciplinary training including electronics, mechanical design, control systems, programming, and robotics.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	PROFESSIONAL DEVELOPMENT / COURSES
+%----------------------------------------------------------------------------------------
+\cvsect{Professional Development}
+\begin{entrylist}
+    \entry
+        {Sept 2025 -- Present}
+        {Robotics Developer Masterclass}
+        {The Construct Robotics Institute}
+        {Advanced practical training in ROS2, C++ for robotics, URDF modeling, TF2 transforms, launch files, multi-robot systems, and simulation. Hands-on projects integrating control, software development, and intelligent robotic systems. 
+        Projects available on GitHub.}
+\end{entrylist}
+
+%----------------------------------------------------------------------------------------
+%	EXPERIENCE
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+\cvsect{Experience}
+\begin{entrylist}
+
+    \entry
+        {Sep 2025 -- Present}
+        {Postdoctoral Researcher}
+        {Carlos III University of Madrid, Leganés, Spain}
+        {\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Design and control of soft links for humanoid robots.
+            \item Development of algorithms for soft robotics actuation and kinematic modeling.
+            \item Research documentation, analysis, and reporting for academic publications.
+        \end{itemize} 
+        \texttt{Soft Robotics} \slashsep \texttt{Humanoid Robots} \slashsep \texttt{CAD} \slashsep  \texttt{Simulation}}
+	\entry
+        {Oct 2023 -- May 2025}
+		{Robotics Research Engineer}
+		{ARQUIMEA Research Center, Tenerife, Spain}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item The development, simulation, and analysis of advanced robotic platforms for biomechanical and commercial applications, including wearable exoskeletons.
+            
+            \item The design and implementation of adaptive, gait-synchronized control algorithms for exoskeletons:
+            \begin{itemize}
+                \item Generation of sinusoidal torque profiles for actuators, initiated at heel strike.
+                \item Real-time adaptation of torque profiles to human walking rhythm, using hip-based modeling and Fourier series analysis on the latest three cycles per 10-second window.
+            \end{itemize}
+            
+            \item Integration of machine learning techniques to classify human movement patterns and phases, enhancing human-robot interaction and exoskeleton performance.
+            
+            \item Development of embedded systems using microcontrollers (I2C/SPI) and inertial sensors (IMU) for real-time motion tracking and control.
+            
+            \item Creation of interactive GUIs using Tkinter and ROS2 for monitoring and real-time visualization of robotic and exoskeleton platforms.
+            
+            \item Experimental validation of exoskeleton controllers to ensure safety, reliability, and biomechanical accuracy.
+            
+            \item Production of comprehensive technical documentation, encompassing system architecture, algorithms, and experimental results.
+        \end{itemize} 
+        \texttt{ROS2} \slashsep \texttt{Python} \slashsep \texttt{Machine Learning} \slashsep \texttt{Biomechanics}}
+        
+	\entry
+		{Sept 2018 -- Aug 2023}
+		{Predoctoral Researcher in Robotics}
+		{RoboticsLab - Universidad Carlos III de Madrid, Spain}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Designed cable-driven soft robotic prototypes (HumaSoft \& SOFIA Projects).
+            \item Implemented robotic control systems using ROS2, Matlab, and Python.
+            \item Integrated ML-based identification techniques for soft actuator characterization.
+        \end{itemize} 
+        \texttt{ROS2} \slashsep \texttt{Soft Robotics} \slashsep \texttt{Python} \slashsep \texttt{Matlab}}
+        
+	\entry
+		{Mar 2021 -- Jun 2021}
+		{Visiting Researcher (Soft Robotics)}
+		{Scuola Superiore Sant'Anna, Pontedera, Italy}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Collaborated on soft actuator design and experimental validation for robotic applications.
+            \item Performed kinematic analysis and control optimization of soft robotic platforms.
+        \end{itemize} 
+        \texttt{Soft Robotics} \slashsep \texttt{Kinematics} \slashsep \texttt{Python}}
+        
+	\entry
+		{Oct 2015 -- Feb 2018}
+		{Project Engineer \& Co-founder}
+		{Metas del Ecuador Cia. Ltda., Quito, Ecuador}
+		{\vspace{-10pt}
+        \begin{itemize}[noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt, leftmargin=-1pt]
+            \item Developed technical studies and procedures for equipment calibration.
+            \item Led design and implementation of automation processes.
+        \end{itemize} 
+        \texttt{Automation} \slashsep \texttt{Technical Documentation} \slashsep \texttt{Engineering}}
+\end{entrylist}
+
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES
+%----------------------------------------------------------------------------------------
+\vspace{-10 pt}
+	\cvsect{Languages}
+    \vspace{-6pt}
+    
+    \hspace{26mm} \textbf{Spanish} - Native, \textbf{English} - B2, \textbf{German} -  A1
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
