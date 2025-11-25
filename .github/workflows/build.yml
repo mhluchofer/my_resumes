@@ -1,12 +1,13 @@
-name: Build and Publish CVs
+name: Build CVs
 
 on:
   push:
     branches: [ main ]
-  workflow_dispatch:  # Permite ejecutar manualmente desde GitHub
+  pull_request:
+    branches: [ main ]
 
 jobs:
-  build-and-publish:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -30,18 +31,11 @@ jobs:
       run: |
         latexmk -pdf -interaction=nonstopmode -halt-on-error main.tex
 
-    # --- Prepare PDFs for GitHub Pages ---
-    - name: Copy PDFs to output folder
+    # --- Copy PDFs to /pdfs with custom names ---
+    - name: Move generated PDFs to pdfs/ folder with custom names
       run: |
-        mkdir -p out
-        cp CV_Developer/main.pdf out/Luis_Nagua_Developer_CV_2025.pdf
-        cp CV_RESEARCHER/main.pdf out/Luis_Nagua_Researcher_CV_2025.pdf
+        mkdir -p pdfs
+        cp CV_Developer/main.pdf pdfs/Luis_Nagua_Developer_CV_2025.pdf
+        cp CV_RESEARCHER/main.pdf pdfs/Luis_Nagua_Researcher_CV_2025.pdf
 
-    # --- Deploy to GitHub Pages ---
-    - name: Deploy to GitHub Pages
-      uses: peaceiris/actions-gh-pages@v6
-      with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ./out
-        # optional: custom branch name, default is gh-pages
-        publish_branch: gh-pages
+
