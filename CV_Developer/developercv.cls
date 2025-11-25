@@ -28,7 +28,10 @@
 \ProcessOptions\relax % Process given options
 
 \LoadClass{extarticle} % Load the base class
-
+% Encoding support
+\RequirePackage[utf8]{inputenc}
+\RequirePackage[T1]{fontenc}
+\RequirePackage{lmodern}
 %----------------------------------------------------------------------------------------
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
